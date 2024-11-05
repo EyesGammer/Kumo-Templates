@@ -1,0 +1,259 @@
+{
+	"tags": {
+		"kcontent": {
+			"tag": "div",
+			"accept": [
+				"size",
+				"bordered",
+				"padding",
+				"margin",
+				"id",
+				"class",
+				"bg"
+			]
+		},
+		"ktitle": {
+			"tag": "h1",
+			"accept": [
+				"bordered",
+				"padding",
+				"margin",
+				"id",
+				"class"
+			]
+		},
+		"krow": {
+			"tag": "div",
+			"accept": [
+				"flex",
+				"flex-row",
+				"flex-col",
+				"flex-center",
+				"bordered",
+				"padding",
+				"bg",
+				"id",
+				"class",
+				"grid-area",
+				"wh"
+			]
+		},
+		"ktext": {
+			"tag": "span",
+			"accept": [
+				"size",
+				"bordered",
+				"padding",
+				"bold",
+				"id",
+				"class"
+			]
+		},
+		"kpar": {
+			"tag": "p",
+			"accept": [
+				"size",
+				"bordered",
+				"padding",
+				"bold",
+				"id",
+				"class"
+			]
+		},
+		"kimg": {
+			"tag": "img",
+			"accept": [
+				"bordered",
+				"margin",
+				"padding",
+				"id",
+				"img-placeholder",
+				"bg",
+				"wh",
+				"grid-area",
+				"id",
+				"class",
+				"lazy"
+			],
+			"default": [
+				"img-placeholder",
+				"wh",
+				"lazy"
+			]
+		},
+		"kstyle": {
+			"tag": "link",
+			"accept": [
+				"link-css",
+				"id",
+				"class"
+			]
+		},
+		"kpreload": {
+			"tag": "link",
+			"accept": [
+				"link-pre",
+				"id",
+				"class"
+			]
+		}
+	},
+	"attributes": {
+		"flex": {
+			"style": [
+				"display: flex;"
+			]
+		},
+		"flex-center": {
+			"style": [
+				"align-items: center;",
+				"align-content: center;",
+				"justify-content: center;"
+			]
+		},
+		"flex-row": {
+			"style": [
+				"flex-direction: row;"
+			]
+		},
+		"flex-col": {
+			"style": [
+				"flex-direction: column;"
+			]
+		},
+		"bordered": {
+			"style": [
+				"border: 1px solid gray;"
+			]
+		},
+		"size": {
+			"style": [
+				"font-size: %0;"
+			],
+			"content": [
+				"16px"
+			]
+		},
+		"padding": {
+			"style": [
+				"padding: %0;"
+			],
+			"content": [
+				"5px"
+			]
+		},
+		"margin": {
+			"style": [
+				"margin: %0;"
+			],
+			"content": [
+				"10px"
+			]
+		},
+		"id": {
+			"attributes": [
+				"id"
+			],
+			"values": [
+				"%0"
+			],
+			"content": [
+				"random-id"
+			]
+		},
+		"class": {
+			"attributes": [
+				"class"
+			],
+			"values": [
+				"%@"
+			],
+			"content": [
+				"random-class"
+			]
+		},
+		"img-placeholder": {
+			"attributes": [
+				"src"
+			],
+			"values": [
+				"%0"
+			],
+			"content": [
+				"https://www.seekpng.com/png/full/349-3499598_portrait-placeholder-placeholder-person.png"
+			]
+		},
+		"bg": {
+			"style": [
+				"background-color: %0;"
+			],
+			"content": [
+				"black"
+			]
+		},
+		"wh": {
+			"style": [
+				"width: %0;",
+				"height: %1;"
+			],
+			"content": [
+				"100px",
+				"200px"
+			]
+		},
+		"lazy": {
+			"attributes": [
+				"loading"
+			],
+			"values": [
+				"%0"
+			],
+			"content": [
+				"eager"
+			]
+		},
+		"grid-area": {
+			"style": [
+				"grid-area: %0;"
+			],
+			"content": [
+				"left"
+			]
+		},
+		"bold": {
+			"style": [
+				"font-weight: bold;"
+			]
+		},
+		"link-css": {
+			"attributes": [
+				"rel",
+				"type",
+				"href"
+			],
+			"values": [
+				"stylesheet",
+				"text/css",
+				"%0"
+			],
+			"content": [
+				"link-css"
+			]
+		},
+		"link-pre": {
+			"attributes": [
+				"rel",
+				"as",
+				"href"
+			],
+			"values": [
+				"preload",
+				"%1",
+				"%0"
+			],
+			"content": [
+				"link-preload"
+			]
+		}
+	}
+}
